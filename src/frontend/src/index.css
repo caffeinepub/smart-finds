@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Warm cream background #F6F1E7 */
+    --background: 0.953 0.019 84;
+    --foreground: 0.135 0 0;
+    /* Card near-white #FBFAF7 */
+    --card: 0.984 0.006 80;
+    --card-foreground: 0.135 0 0;
+    --popover: 0.984 0.006 80;
+    --popover-foreground: 0.135 0 0;
+    /* Deep purple #7B5CD0 */
+    --primary: 0.525 0.188 292;
+    --primary-foreground: 0.985 0 0;
+    /* Soft lavender secondary */
+    --secondary: 0.875 0.072 291;
+    --secondary-foreground: 0.135 0 0;
+    /* Muted beige */
+    --muted: 0.9 0.021 72;
+    --muted-foreground: 0.475 0.009 65;
+    /* Lavender accent #B7A3E6 */
+    --accent: 0.732 0.115 293;
+    --accent-foreground: 0.985 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Card border #E7DED4 */
+    --border: 0.9 0.021 72;
+    --input: 0.9 0.021 72;
+    --ring: 0.732 0.115 293;
+
+    /* Custom brand tokens */
+    --lavender: 0.732 0.115 293;
+    --deep-purple: 0.525 0.188 292;
+    --footer-band: 0.875 0.072 291;
+
+    /* Pastel section backgrounds */
+    --mint-bg: 0.962 0.022 163; /* mint green #e8f5f0 */
+    --peach-bg: 0.952 0.03 40; /* soft peach #fde8dc */
+    --beige-bg: 0.953 0.019 84; /* warm beige (same as background) */
+    --mint-light: 0.972 0.015 163; /* lighter mint */
+    --peach-light: 0.965 0.02 40; /* lighter peach */
+    --tag-viral: 0.79 0.1 291;
+    --tag-bestseller: 0.91 0.07 90;
+    --tag-trending: 0.85 0.07 291;
+    --tag-toprated: 0.88 0.04 72;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.984 0.006 80;
+    --sidebar-foreground: 0.135 0 0;
+    --sidebar-primary: 0.525 0.188 292;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.875 0.072 291;
+    --sidebar-accent-foreground: 0.135 0 0;
+    --sidebar-border: 0.9 0.021 72;
+    --sidebar-ring: 0.732 0.115 293;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Playfair Display", serif;
+  }
+
+  .text-lavender {
+    color: oklch(var(--lavender));
+  }
+
+  .bg-lavender {
+    background-color: oklch(var(--lavender));
+  }
+
+  .bg-deep-purple {
+    background-color: oklch(var(--deep-purple));
+  }
+
+  .bg-footer-band {
+    background-color: oklch(var(--footer-band));
+  }
+
+  .border-lavender {
+    border-color: oklch(var(--lavender));
+  }
+
+  .bg-mint {
+    background-color: oklch(var(--mint-bg));
+  }
+
+  .bg-peach {
+    background-color: oklch(var(--peach-bg));
+  }
+
+  .bg-pastel-beige {
+    background-color: oklch(0.958 0.016 72);
+  }
+
+  .bg-mint-light {
+    background-color: oklch(var(--mint-light));
+  }
+
+  .bg-peach-light {
+    background-color: oklch(var(--peach-light));
+  }
+
+  /* Scroll reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 {
+    transition-delay: 0.1s;
+  }
+  .reveal-delay-2 {
+    transition-delay: 0.2s;
+  }
+  .reveal-delay-3 {
+    transition-delay: 0.3s;
+  }
+  .reveal-delay-4 {
+    transition-delay: 0.4s;
+  }
+  .reveal-delay-5 {
+    transition-delay: 0.5s;
+  }
+  .reveal-delay-6 {
+    transition-delay: 0.6s;
+  }
+}
