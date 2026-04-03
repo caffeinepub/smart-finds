@@ -429,26 +429,6 @@ const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 19,
-    name: "Compact Tape Dispenser Set",
-    category: "stationery",
-    benefit: "Desk tape dispenser with rolls — keep your study table organized",
-    price: "₹249",
-    tag: "New",
-    image:
-      "/assets/generated/product-19-compact-tape-dispenser-v2.dim_600x600.png",
-    amazonUrl: "https://amzn.to/4saKVM2?tag=curifyystore-21",
-    rating: 4.0,
-    reviewCount: 320,
-    description: [
-      "Compact desktop tape dispenser with a loaded transparent scotch tape roll — ready to use right out of the box.",
-      "Weighted base keeps the dispenser firmly in place so it doesn't slide while you pull tape.",
-      "Serrated cutter delivers a clean, straight tear every time — no jagged edges or wasted tape.",
-      "Small footprint fits neatly on any study desk, craft table, or in a drawer without taking up space.",
-      "A simple, affordable desk essential for wrapping gifts, sealing notes, sticking reminders, or craft projects.",
-    ],
-  },
-  {
     id: 20,
     name: "boAt Rockerz 411 Wireless Headphones",
     category: "audio",
@@ -2193,8 +2173,6 @@ function makeImageFallback(name: string, _category: string): string {
       "/assets/generated/product-supreme-deals-pencil-case-transparent.dim_400x400.png",
     "Aesthetic Grid Journal Notebook":
       "/assets/generated/product-18-aesthetic-grid-journal-v2.dim_600x600.png",
-    "Compact Tape Dispenser Set":
-      "/assets/generated/product-19-compact-tape-dispenser-v2.dim_600x600.png",
     "boAt Rockerz 411 Wireless Headphones":
       "/assets/generated/product-boat-411.dim_400x400.jpg",
     "pTron Studio Pro Headphones":
