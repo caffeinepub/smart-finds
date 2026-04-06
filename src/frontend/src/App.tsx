@@ -63,6 +63,7 @@ interface Product {
   amazonUrl: string;
   rating: number;
   reviewCount: number;
+  keywords: string[];
 }
 
 // ─── Data ────────────────────────────────────────────────────────────────────
@@ -79,6 +80,17 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4sHImlK?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 21986,
+    keywords: [
+      "bottle",
+      "water bottle",
+      "steel bottle",
+      "flask",
+      "drinkware",
+      "cello",
+      "insulated",
+      "leak proof",
+      "900ml",
+    ],
     description: [
       "ISI certified and BPA-free — safe for daily use with no chemical leaching.",
       "Leak-proof wide mouth lid sealed with a silicone ring stays dry in your bag.",
@@ -99,6 +111,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3O0CWTJ?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 805,
+    keywords: [
+      "bottle",
+      "flask",
+      "vacuum flask",
+      "water bottle",
+      "drinkware",
+      "1 liter",
+      "insulated",
+      "thermos",
+    ],
     description: [
       "ISI certified with triple-layer vacuum insulation for superior temperature control.",
       "Precision-engineered airtight lid is 100% leakproof — safe in bags and backpacks.",
@@ -118,6 +140,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4dq3JDn?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 1322,
+    keywords: [
+      "thermos",
+      "flask",
+      "bottle",
+      "water bottle",
+      "insulated bottle",
+      "drinkware",
+      "pexpo",
+      "940ml",
+    ],
     description: [
       "3-layer double-wall insulation keeps drinks hot or cold for hours with no condensation.",
       "Vibrant pink-green ombre design looks bold and modern — a head-turner at college.",
@@ -138,6 +170,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4sSQLD2?tag=curifyystore-21",
     rating: 4.5,
     reviewCount: 1121,
+    keywords: [
+      "notebook",
+      "classmate",
+      "spiral notebook",
+      "notes",
+      "writing",
+      "school",
+      "college",
+      "study",
+    ],
     description: [
       "6 clearly divided subjects make it easy to organise all your college notes in one book.",
       "A4 size (29.7 x 21 cm) with 400 single-line pages — plenty of space for every lecture.",
@@ -158,6 +200,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/41NPMYJ?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 12836,
+    keywords: [
+      "notebook",
+      "luxor",
+      "ruled notebook",
+      "notes",
+      "writing",
+      "school",
+      "college",
+      "study",
+    ],
     description: [
       "5 subject sections keep your notes neatly organised across different topics or classes.",
       "A5 size (14.0 x 21.6 cm) slips into any bag — great for college, meetings, or journaling.",
@@ -178,6 +230,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4cmdSQo?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 444,
+    keywords: [
+      "planner",
+      "diary",
+      "notebook",
+      "organizer",
+      "kalp",
+      "dated planner",
+      "journal",
+      "2026",
+    ],
     description: [
       "A page for every day of 2026 — plan meetings, goals, and habits in one hardbound diary.",
       "Ink-bleed-free 400 pages in A5 hardcover with ribbon bookmark and matte finish.",
@@ -198,6 +260,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4dpEyAY?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 3220,
+    keywords: [
+      "tumbler",
+      "bottle",
+      "water bottle",
+      "steel tumbler",
+      "drinkware",
+      "1200ml",
+      "insulated",
+    ],
     description: [
       "1200ML stainless steel tumbler keeps drinks hot for hours and cold all day — no sweating on the outside.",
       "Comes with a secure lid and 2 straws so you can sip your way, with zero spills on the go.",
@@ -218,6 +289,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4bNkeIt?tag=curifyystore-21",
     rating: 4.5,
     reviewCount: 142,
+    keywords: [
+      "tumbler",
+      "bottle",
+      "bear tumbler",
+      "cute bottle",
+      "straw bottle",
+      "drinkware",
+      "insulated",
+    ],
     description: [
       "Double-wall vacuum insulation keeps cold drinks icy for 12 hours and hot drinks warm for 8 hours.",
       "Premium 304 stainless steel is BPA-free, rust-resistant, and leaves zero metallic aftertaste.",
@@ -238,6 +318,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/41tTruZ?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 758,
+    keywords: [
+      "tumbler",
+      "bottle",
+      "nestasia",
+      "straw bottle",
+      "drinkware",
+      "handle bottle",
+      "aesthetic bottle",
+    ],
     description: [
       "Tri-ply vacuum insulation — three layers keep your beverage at the right temperature far longer than standard bottles.",
       "Dual-compartment sip-swig lid lets you switch between sipping through a straw or chugging freely with a flip.",
@@ -258,6 +347,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/41EePNY?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 35,
+    keywords: [
+      "tumbler",
+      "glass tumbler",
+      "bottle",
+      "drinkware",
+      "anti hero",
+      "glass bottle",
+    ],
     description: [
       "350ml transparent glass can tumbler with a bold Anti Hero graphic print — turns your daily drink into a vibe.",
       "Natural bamboo lid seals tightly and adds an eco-friendly, aesthetic touch to the look.",
@@ -278,6 +375,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3NUyxSw?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 312,
+    keywords: [
+      "book stand",
+      "laptop stand",
+      "study stand",
+      "holder",
+      "reading stand",
+      "desk stand",
+      "adjustable stand",
+    ],
     description: [
       "Multi-functional foldable stand that works as a book holder, laptop riser, recipe stand, or music sheet holder.",
       "360° rotation and adjustable tilt lets you set the perfect reading or typing angle in seconds.",
@@ -298,6 +404,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4trV7kA?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 189,
+    keywords: [
+      "bookend",
+      "book stand",
+      "pen holder",
+      "desk organizer",
+      "metal bookend",
+      "study",
+    ],
     description: [
       "Expands up to 15 inches to hold books of any volume — works for home shelves, office desks, classrooms, and libraries.",
       "Built-in pen holder means your stationery stays within arm's reach — no more hunting for pens mid-study session.",
@@ -318,6 +432,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4cjAlOa?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 224,
+    keywords: [
+      "book stand",
+      "cookbook stand",
+      "reading stand",
+      "study holder",
+      "portable stand",
+      "desk",
+    ],
     description: [
       "Foldable and portable design makes this the perfect study companion — pack it in your bag or set it up anywhere in seconds.",
       "Adjustable angle lets you prop up books, tablets, notebooks, or cookbooks at a comfortable reading height.",
@@ -337,6 +459,7 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4bME9r5?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 48,
+    keywords: ["bookend", "superman", "book holder", "desk decor", "study"],
     description: [
       "The Metawood Superman Bookend brings a playful superhero vibe to your study desk with its clever illusion design.",
       "Made of durable metal, it keeps your books upright while looking absolutely cool.",
@@ -356,6 +479,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4m3pISS?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 1910,
+    keywords: [
+      "pencil pouch",
+      "pencil case",
+      "pen pouch",
+      "stationery bag",
+      "canvas pouch",
+      "school bag",
+    ],
     description: [
       "This Canvas pencil pouch packs serious capacity into a cute aesthetic package.",
       "The 3 separate compartments keep your pens, pencils, erasers, and stationery perfectly sorted and easy to find.",
@@ -376,6 +507,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4skXwww?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 209,
+    keywords: [
+      "pen case",
+      "pencil case",
+      "hard case",
+      "stationery",
+      "pen holder",
+      "gadgetbite",
+    ],
     description: [
       "The GadgetBite Hard Shell Pen Case is a slim, protective EVA case built for Apple Pencil, fountain pens, and stylus pens.",
       "The hard outer shell guards against bumps while the inner mesh pocket and elastic strap keep everything secure.",
@@ -396,6 +535,13 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4c3huWc?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 1004,
+    keywords: [
+      "pencil case",
+      "pen case",
+      "canvas case",
+      "stationery bag",
+      "pouch",
+    ],
     description: [
       "The Supreme Deals Canvas Pencil Case features 6 layers of compartments across 3 main sections — plenty of space for all your stationery.",
       "The cute aesthetic cartoon design makes it a fun addition to your school bag.",
@@ -417,6 +563,15 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0B28PVRHQ/ref=cm_sw_r_as_gl_apa_gl_i_dl_FNAZQKAW05P3PPP3N1MV?linkCode=ml1&tag=curifyystore-21&linkId=03f7d3d3a5ed40b25ab87878fa147d3f",
     rating: 4.1,
     reviewCount: 156,
+    keywords: [
+      "journal",
+      "notebook",
+      "grid notebook",
+      "aesthetic journal",
+      "diary",
+      "writing",
+      "dotted",
+    ],
     description: [
       "A5 hardcover grid journal with a soft pastel cover — designed for students who love aesthetic, organized setups.",
       "Dot-grid pages give you perfect structure for bullet journaling, sketching, equations, or daily planning.",
@@ -437,6 +592,18 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4sJPkXp?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 27892,
+    keywords: [
+      "headphones",
+      "wireless headphones",
+      "bluetooth headphones",
+      "earphones",
+      "boat",
+      "music",
+      "audio",
+      "over ear",
+      "rockerz",
+      "gaming headset",
+    ],
     description: [
       "The boAt Rockerz 411 delivers 40 hours of battery life so you never have to stop mid-study for a charge.",
       "The 40ms low latency mode is perfect for gaming and video watching without annoying audio delay.",
@@ -456,6 +623,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4bP5DfC?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 348,
+    keywords: [
+      "headphones",
+      "wireless headphones",
+      "bluetooth headphones",
+      "over ear headphones",
+      "ptron",
+      "music",
+      "audio",
+      "earphones",
+    ],
     description: [
       "The pTron Studio Pro delivers an impressive 65 hours of playtime on a single charge — enough for a full week of study sessions without plugging in.",
       "The HD Mic with TruTalk AI-ENC technology cuts out background noise during calls and online classes for crystal-clear communication.",
@@ -475,6 +652,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4sMKhWd?tag=curifyystore-21",
     rating: 4.5,
     reviewCount: 1182,
+    keywords: [
+      "sticky notes",
+      "post it",
+      "notes",
+      "reminder",
+      "stationery",
+      "neon sticky",
+      "memo",
+    ],
     description: [
       "Post-it Super Sticky Notes have twice the adhesive power of regular sticky notes, so they actually stay on textbooks, monitors, and notebooks without falling off.",
       "The neon colours make your most important reminders impossible to miss.",
@@ -494,6 +680,17 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3PH2PbX?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 8056,
+    keywords: [
+      "neckband",
+      "earphones",
+      "bluetooth earphones",
+      "wireless earphones",
+      "boat",
+      "music",
+      "audio",
+      "neckband earphones",
+      "sports earphones",
+    ],
     description: [
       "The boAt Rockerz 113 neckband fits effortlessly around your neck and stays there during workouts, commutes, and long study sessions.",
       "The magnetic buds click together and auto-pause music when not in use — super convenient.",
@@ -514,6 +711,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4v2vcS9?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 580,
+    keywords: [
+      "cable clips",
+      "cable organizer",
+      "wire organizer",
+      "desk organizer",
+      "magnetic clips",
+      "cable management",
+    ],
     description: [
       "These magnetic cable clips snap onto your desk edge and hold USB, charging, and headphone cables in place so they're always within reach.",
       "No more crawling under desks to find fallen cables.",
@@ -533,6 +738,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4s8clSU?tag=curifyystore-21",
     rating: 3.2,
     reviewCount: 40,
+    keywords: [
+      "sticky notes",
+      "pastel notes",
+      "memo pad",
+      "stationery",
+      "reminder",
+      "dme",
+    ],
     description: [
       "These DME pastel sticky notes come in a charming multi-colour set ideal for colour-coded notes, reminders, and study organization.",
       "Each 95mm x 98mm sheet is the perfect size for a short reminder or important note.",
@@ -554,6 +767,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0CFJF5KZD/ref=cm_sw_r_as_gl_apa_gl_i_BG7R4PRMZYSB59Z7GJG8?linkCode=ml1&tag=curifyystore-21&linkId=6841ff42f2e0409648f6a93b1a653fe4",
     rating: 4.0,
     reviewCount: 127,
+    keywords: [
+      "sewing kit",
+      "travel sewing",
+      "needle thread",
+      "emergency kit",
+      "repair kit",
+      "sewing",
+    ],
     description: [
       "The MeeTo Mini Travel Sewing Kit is the ultimate 'I didn't know I needed this' purchase.",
       "It includes scissors, needles, thread in multiple colours, pins, and clips — everything for quick wardrobe repairs while at college or on a trip.",
@@ -574,6 +795,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/419Gbvi?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 445,
+    keywords: [
+      "pen",
+      "gel pen",
+      "retractable pen",
+      "writing pen",
+      "stationery",
+      "ballpoint",
+      "smooth writing",
+    ],
     description: [
       "Set of retractable gel pens in multiple ink colors — blue, black, red, and more for color-coded note-taking.",
       "Smooth, consistent ink flow from tip to finish — writes cleanly on notebooks, planners, and sticky notes.",
@@ -594,6 +824,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4saEyIK?tag=curifyystore-21",
     rating: 3.8,
     reviewCount: 70,
+    keywords: [
+      "sticky notes",
+      "macaron notes",
+      "memo pad",
+      "stationery",
+      "reminder",
+      "pastel sticky",
+    ],
     description: [
       "These Macaron sticky notes come in beautiful pastel macaron shades that make your study planner or board look adorable.",
       "With 400 sheets of strong-adhesive paper, you have plenty to stick reminders, flags, and annotations across all your books and notebooks.",
@@ -614,6 +852,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/47Bxy05?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 3068,
+    keywords: [
+      "mobile stand",
+      "phone stand",
+      "phone holder",
+      "desk stand",
+      "wecool",
+      "phone mount",
+    ],
     description: [
       "The WeCool T1 features 360° rotation so you can watch, video call, or follow a recipe from any angle without straining your neck.",
       "Height and view angle are both adjustable, making it perfect for your study desk, bedside table, or kitchen counter.",
@@ -634,6 +880,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/47A9SJE?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 48,
+    keywords: [
+      "cable box",
+      "wire management",
+      "cable organizer",
+      "mobile stand",
+      "desk organizer",
+      "cable management",
+    ],
     description: [
       "The Soko WireHide is a premium plastic cable management box that hides your power strip, router, and gadget wires neatly under your desk.",
       "Comes with a built-in phone stand so your device stays accessible even while charging.",
@@ -654,6 +908,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4m7DEeI?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 1331,
+    keywords: [
+      "cable clips",
+      "cable organizer",
+      "wire clips",
+      "magnetic",
+      "desk organizer",
+      "cable management",
+    ],
     description: [
       "These 6 magnetic cable clips stick to almost any smooth surface — wood, glass, metal, marble — keeping wires exactly where you want them.",
       "The 7.5mm slot holds most phone chargers, headphone cables, and USB wires securely.",
@@ -674,6 +936,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4bNCOQH?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 561,
+    keywords: [
+      "wireless charger",
+      "fast charger",
+      "charging pad",
+      "qi charger",
+      "15w charger",
+      "phone charger",
+    ],
     description: [
       "The DR VAKU Unity charges at up to 15W for fast wireless power — just place your phone and go, no fumbling with cables.",
       "Qi-certified and compatible with iPhone 12 through 17 series, Samsung Galaxy, OnePlus, Nothing Phone, and all Qi-enabled devices.",
@@ -694,6 +964,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4bXZf4t?tag=curifyystore-21",
     rating: 3.8,
     reviewCount: 13,
+    keywords: [
+      "pen holder",
+      "desk organizer",
+      "clock",
+      "calendar",
+      "stationery holder",
+      "desk decor",
+    ],
     description: [
       "The Deskart pen stand combines three desk essentials in one: a pen holder, an analog clock, and a lifetime infinity calendar.",
       "Built from premium laser-cut MDF wood with a smooth polished finish — looks elegant on any study table or office desk.",
@@ -714,6 +992,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4v6GsNh?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 2786,
+    keywords: [
+      "desk organizer",
+      "stationery organizer",
+      "pen holder",
+      "desk storage",
+      "office organizer",
+      "compartment organizer",
+    ],
     description: [
       "Get two high-quality desk organisers in one pack — each with 7 compartments for pens, stationery, makeup, and small office essentials.",
       "Crafted from durable HIPS + PS + PP plastic with smooth edges and a clean white finish that suits any workspace aesthetic.",
@@ -734,6 +1020,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4ckQRNL?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 512,
+    keywords: [
+      "desk organizer",
+      "drawer organizer",
+      "stationery organizer",
+      "desk storage",
+      "compartment",
+      "pen holder",
+    ],
     description: [
       "At just ₹199, the UCRAVO desk organiser is one of the best value buys for students — 5 compartments and 2 transparent drawers in sleek black.",
       "Different-sized slots let you sort pens, paper clips, keys, phone, wallet, and small stationery all in one place.",
@@ -754,6 +1048,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3Qh8nKf?tag=curifyystore-21",
     rating: 4.4,
     reviewCount: 320,
+    keywords: [
+      "instax",
+      "photo printer",
+      "fujifilm",
+      "instant printer",
+      "photo",
+      "printer",
+      "polaroid",
+      "smartphone printer",
+    ],
     description: [
       "Print wallet-sized photos from your smartphone via Bluetooth in seconds.",
       "Works with Fujifilm's free Instax mini Link app for iOS and Android.",
@@ -774,6 +1078,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4tpFR7M?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 1850,
+    keywords: [
+      "photo printer",
+      "epson",
+      "compact printer",
+      "picture printer",
+      "photo printing",
+      "printer",
+    ],
     description: [
       'Prints lab-quality, borderless 4×6" photos from your phone, laptop, or memory card.',
       "Uses Epson's DURABrite Ultra ink for smudge-proof, water-resistant, long-lasting prints.",
@@ -794,6 +1106,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/41ag8Ec?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 410,
+    keywords: [
+      "thermal printer",
+      "pocket printer",
+      "mini printer",
+      "portable printer",
+      "sticker printer",
+      "label printer",
+    ],
     description: [
       "Palm-sized inkless thermal printer that pairs to your phone via Bluetooth — no ink cartridges, ever.",
       "Print sticky-back stickers, to-do lists, mini photos, labels, and study notes on the go.",
@@ -815,6 +1135,15 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0D57JRWN1?linkCode=ml1&tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 112,
+    keywords: [
+      "desk lamp",
+      "study lamp",
+      "led lamp",
+      "table lamp",
+      "touch lamp",
+      "reading light",
+      "lamp",
+    ],
     description: [
       "USB rechargeable with 1250mAh battery — up to 6 hours of light on a single charge.",
       "3 lighting modes (warm, cool, natural) with stepless dimming for the perfect brightness.",
@@ -835,6 +1164,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/47HRQVQ?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 2692,
+    keywords: [
+      "desk lamp",
+      "study lamp",
+      "table lamp",
+      "rechargeable lamp",
+      "led lamp",
+      "reading light",
+      "lamp",
+    ],
     description: [
       "3 color modes (White, Warm White, Warm) — switch with a single touch for any study situation.",
       "2000mAh battery with Type-C USB charging supports laptop, power bank, or adapter.",
@@ -855,6 +1193,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4c5eN6G?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 20,
+    keywords: [
+      "desk lamp",
+      "study lamp",
+      "lamp with fan",
+      "double head lamp",
+      "led lamp",
+      "table lamp",
+      "fan lamp",
+      "lamp",
+    ],
     description: [
       "Dual-headed lamp expands 180° horizontally and folds vertically for wide, flexible lighting.",
       "Built-in LED display shows time, temperature, and date — no separate desk clock needed.",
@@ -876,6 +1224,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0GK72WGRC?linkCode=ml1&tag=curifyystore-21",
     rating: 4.5,
     reviewCount: 16,
+    keywords: [
+      "timer",
+      "study timer",
+      "whiteboard timer",
+      "pomodoro",
+      "magnetic timer",
+      "countdown timer",
+    ],
     description: [
       "4 independent countdown timers and stopwatches run simultaneously — perfect for Pomodoro technique.",
       "Built-in whiteboard lets you jot goals or tasks right on the device — no paper needed.",
@@ -896,6 +1252,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4dw4ElX?tag=curifyystore-21",
     rating: 4.5,
     reviewCount: 107,
+    keywords: [
+      "pomodoro timer",
+      "timer",
+      "study timer",
+      "gravity timer",
+      "focus timer",
+      "time management",
+    ],
     description: [
       "Simply flip the cube to start a timer — no buttons, no apps, just pure tactile focus.",
       "Each side sets a different time interval — perfect for Pomodoro or interval studying.",
@@ -916,6 +1280,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4scgBAL?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 1004,
+    keywords: [
+      "fan",
+      "handheld fan",
+      "portable fan",
+      "rechargeable fan",
+      "mini fan",
+      "desk fan",
+      "travel fan",
+    ],
     description: [
       "1 USB 3.0 port delivers 5Gbps transfer speeds — move large files effortlessly.",
       "3 additional USB 2.0 ports for peripherals, accessories, and everyday devices.",
@@ -937,6 +1310,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0CHBHYLLR?linkCode=ml1&tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 1081,
+    keywords: [
+      "fan",
+      "folding fan",
+      "mini fan",
+      "handheld fan",
+      "portable fan",
+      "travel fan",
+    ],
     description: [
       "7 ports in one: 4K HDMI, USB 3.0, 2x USB 2.0, TypeC 3.0, SD card, and Micro SD slot.",
       "100W Power Delivery charges your laptop while you use all other ports simultaneously.",
@@ -957,6 +1338,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3QfMFq0?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 1046,
+    keywords: [
+      "travel bag",
+      "duffle bag",
+      "luggage",
+      "travel luggage",
+      "gym bag",
+      "weekend bag",
+      "bag",
+      "travel duffel",
+    ],
     description: [
       "4 USB 2.0 ports at up to 480 Mbps transfer speed — connect keyboards, mice, drives, and more.",
       "1.5-metre tangle-free cable keeps your setup clean and comfortable across any desk.",
@@ -978,6 +1369,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0CKLRBZZW?linkCode=ml1&tag=curifyystore-21",
     rating: 4.5,
     reviewCount: 545,
+    keywords: [
+      "umbrella",
+      "folding umbrella",
+      "compact umbrella",
+      "mini umbrella",
+      "rain umbrella",
+      "portable umbrella",
+    ],
     description: [
       "7 compartments including enlarged slots for USB cables, chargers, cards, and stationery.",
       "Made from eco-friendly, non-toxic ABS plastic with smooth, burr-free edges.",
@@ -998,6 +1397,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3O2tLCq?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 72,
+    keywords: [
+      "umbrella",
+      "uv umbrella",
+      "sun umbrella",
+      "anti uv",
+      "compact umbrella",
+      "carabiner umbrella",
+    ],
     description: [
       "Neatly hides power strips, surge protectors, extension boards, and routers out of sight.",
       "Durable, heat-dissipating material built for heavy-duty applications and long-term use.",
@@ -1019,6 +1426,13 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0BNVG3JSV?linkCode=ml1&tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 748,
+    keywords: [
+      "cable box",
+      "cable organizer",
+      "wire management",
+      "desk organizer",
+      "compartment box",
+    ],
     description: [
       "20 cable ties in 5 colors — perfect for color-coded cable management across devices.",
       "High-quality microfiber cloth is reusable, eco-friendly, and won't damage cables.",
@@ -1039,6 +1453,13 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4dXgPYW?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 24602,
+    keywords: [
+      "cable management",
+      "cable box",
+      "wire organizer",
+      "desk organizer",
+      "neomate",
+    ],
     description: [
       "20W audio output powered by a 4000mAh Li-ion battery — up to 7 hours of non-stop music.",
       "Built-in microphone supports handsfree calls — use it for studying, gaming, and calls.",
@@ -1059,6 +1480,13 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4sQvEkX?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 5423,
+    keywords: [
+      "cable ties",
+      "wire ties",
+      "velcro ties",
+      "cable organizer",
+      "reusable ties",
+    ],
     description: [
       "Comes with a wireless karaoke mic — sing along to your favorite songs instantly.",
       "Vivid RGB lights make it a fun desk centerpiece or party speaker in any space.",
@@ -1079,6 +1507,13 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4c4sGlF?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 3209,
+    keywords: [
+      "storage box",
+      "organizer box",
+      "desk organizer",
+      "multifunctional box",
+      "storage",
+    ],
     description: [
       "170cm/67inch extended height captures wide angles for vlogs, reels, and group shots.",
       "2-level LED fill light brightens selfies and video calls in any lighting condition.",
@@ -1099,6 +1534,17 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4vncMvw?tag=curifyystore-21",
     rating: 2.7,
     reviewCount: 14,
+    keywords: [
+      "bluetooth speaker",
+      "wireless speaker",
+      "speaker",
+      "portronics",
+      "portable speaker",
+      "music",
+      "audio",
+      "sound",
+      "20w speaker",
+    ],
     description: [
       "1200mAh rechargeable battery keeps you cool without needing a power outlet.",
       "120 adjustable speed levels via long-press for precise airflow control.",
@@ -1119,6 +1565,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3Of9864?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 2526,
+    keywords: [
+      "bluetooth speaker",
+      "speaker with mic",
+      "karaoke speaker",
+      "wireless speaker",
+      "ptron",
+      "music",
+      "audio",
+      "karaoke",
+    ],
     description: [
       "Foldable design fits in any bag pocket — perfect for college, commute, and travel.",
       "2 speed modes for gentle breezes or stronger airflow when you need it most.",
@@ -1140,6 +1596,16 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0D3M1SS89?linkCode=ml1&tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 2960,
+    keywords: [
+      "earbuds",
+      "tws earbuds",
+      "wireless earbuds",
+      "fire boltt",
+      "earphones",
+      "music",
+      "audio",
+      "bluetooth earbuds",
+    ],
     description: [
       "#1 Best Seller in Travel Duffels on Amazon India — trusted by over 1,000 buyers per month.",
       "41-liter capacity carries clothes, toiletries, gear, and essentials for a weekend trip.",
@@ -1160,6 +1626,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4vcOVi4?tag=curifyystore-21",
     rating: 5.0,
     reviewCount: 77,
+    keywords: [
+      "earbuds",
+      "wireless earbuds",
+      "tws",
+      "earphones",
+      "music",
+      "audio",
+      "bluetooth earbuds",
+      "goboult",
+    ],
     description: [
       "Ultra-compact design weighs just 300g and fits perfectly in any bag or purse.",
       "UPF 50+ rating blocks 99% of harmful UV rays — protects against both rain and sun.",
@@ -1180,6 +1656,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4mr2A13?tag=curifyystore-21",
     rating: 5.0,
     reviewCount: 60,
+    keywords: [
+      "earbuds",
+      "tws earbuds",
+      "wireless earbuds",
+      "truke",
+      "earphones",
+      "music",
+      "audio",
+      "bluetooth earbuds",
+    ],
     description: [
       "Unique carabiner clip handle lets you hang the umbrella on bags, belts, or rails easily.",
       "One-button auto open/close — works with one hand even in sudden downpours.",
@@ -1200,6 +1686,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4tk6lav?tag=curifyystore-21",
     rating: 3.8,
     reviewCount: 2709,
+    keywords: [
+      "docking station",
+      "usb hub",
+      "type c hub",
+      "honeywell",
+      "4k hdmi",
+      "usb c",
+      "laptop accessories",
+      "hub",
+    ],
     description: [
       "#1 Best Seller in Doodle & Scribbler Boards with 1K+ buys per month.",
       "LCD screen with no radiation, no glare, and no blue light — safe for extended use.",
@@ -1220,6 +1716,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4v7W0Ac?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 1602,
+    keywords: [
+      "usb hub",
+      "portronics",
+      "4 port hub",
+      "usb",
+      "laptop accessories",
+      "hub",
+      "usb splitter",
+    ],
     description: [
       "15-inch rainbow-colored LCD screen is vibrant, glare-free, and easy on the eyes.",
       "Pressure-sensitive surface provides a paper-like writing experience with the stylus.",
@@ -1240,6 +1745,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4dYz403?tag=curifyystore-21",
     rating: 3.8,
     reviewCount: 24,
+    keywords: [
+      "exam kit",
+      "geometry box",
+      "maped",
+      "drawing instruments",
+      "school set",
+      "stationery set",
+      "compass set",
+    ],
     description: [
       "All-in-one exam kit with 10 items: transparent clipboard, geometry box, 30cm scale, mechanical pencil, graphite pencil, long eraser, ink eraser, canister sharpener, and magic stone.",
       "Die-casted rounder in the geometry box for precision compass work in exams.",
@@ -1260,6 +1774,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3QfOx20?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 212,
+    keywords: [
+      "file folder",
+      "document folder",
+      "mesh folder",
+      "a4 folder",
+      "file organizer",
+      "zipper folder",
+      "stationery",
+    ],
     description: [
       "3 separate compartments keep A4 documents, notebooks, and stationery organized by subject.",
       "Waterproof mesh and PVC material protects documents from spills, dust, and wear.",
@@ -1280,6 +1803,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4c1dzsV?tag=curifyystore-21",
     rating: 3.7,
     reviewCount: 22,
+    keywords: [
+      "protractor",
+      "ruler",
+      "drawing ruler",
+      "geometry",
+      "drafting tool",
+      "stationery",
+      "math tools",
+      "compass",
+    ],
     description: [
       "Customized neurological exam kit for medical students doing CNS practicals and OSCE exams.",
       "Includes knee hammer, tuning forks, pen torch, measuring tape, cotton balls, and tongue depressor.",
@@ -1300,6 +1833,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/41v5KqV?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 5350,
+    keywords: [
+      "selfie stick",
+      "tripod",
+      "selfie tripod",
+      "ring light",
+      "phone tripod",
+      "kratos",
+      "photography",
+      "vlog",
+    ],
     description: [
       "Combines a 360° protractor, straightedge ruler, and angle templates into one compact tool.",
       "Smooth rotating mechanism for effortless drawing of circles, arcs, and precise angles.",
@@ -1320,6 +1863,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3PLa4zy?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 85,
+    keywords: [
+      "medical kit",
+      "cns kit",
+      "nursing kit",
+      "clinical kit",
+      "medical student",
+      "stethoscope",
+      "bp apparatus",
+      "health",
+    ],
     description: [
       "Adorable Panda cartoon design makes this set a standout stationery pick for kids and teens.",
       "Multi-compartment canvas pouch holds pens, pencils, sharpeners, and more with ease.",
@@ -1341,6 +1894,15 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0F4D8VRWP?linkCode=ml1&tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 586,
+    keywords: [
+      "first aid kit",
+      "aid kit",
+      "bandage",
+      "medical kit",
+      "emergency kit",
+      "hansaplast",
+      "health kit",
+    ],
     description: [
       "38-piece kit with everything for immediate wound care: gauze swabs, alcohol swabs, cotton pads, bandages, tape, and 5 types of Hansaplast plasters.",
       "Compact reusable pouch fits in a bag, car, drawer, or gym bag for always-ready access.",
@@ -1362,6 +1924,15 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0FJ7BB73C?linkCode=ml1&tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 161,
+    keywords: [
+      "medicine box",
+      "pill organizer",
+      "tablet box",
+      "medicine organizer",
+      "pharmacy box",
+      "health",
+      "pill box",
+    ],
     description: [
       "Transparent lid lets you see contents at a glance without opening — saves time.",
       "Detachable inner tray and 2-compartment design organizes medicines, bandages, and tools.",
@@ -1382,6 +1953,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4tJT8Z5?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 72,
+    keywords: [
+      "writing tablet",
+      "lcd tablet",
+      "drawing tablet",
+      "e-writer",
+      "digital board",
+      "kids tablet",
+      "doodle board",
+      "writing pad",
+    ],
     description: [
       "Spacious 29.5 × 19 × 20.5 cm box holds stationery, books, medical tools, and household sundries.",
       "Convenient carry handle makes it easy to move between rooms — no permanent installation needed.",
@@ -1402,6 +1983,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4cbeOpQ?tag=curifyystore-21",
     rating: 3.6,
     reviewCount: 5830,
+    keywords: [
+      "writing tablet",
+      "lcd tablet",
+      "rainbow tablet",
+      "digital notepad",
+      "drawing board",
+      "e-writer",
+      "doodle board",
+    ],
     description: [
       "50 hours of total playback with ASAP Charge — 10 minutes charges 150 minutes of music.",
       "Dual ENx-powered microphones eliminate background noise for crystal-clear calls.",
@@ -1422,6 +2012,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3NE2whu?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 134,
+    keywords: [
+      "pencil pouch",
+      "kawaii pouch",
+      "cute pencil case",
+      "eraser pouch",
+      "stationery bag",
+      "kawaii stationery",
+    ],
     description: [
       "FirePods app lets you customize EQ, touch controls, and themes from your phone.",
       "Quad-mic ENC technology reduces surrounding noise for smooth calls and virtual meetings.",
@@ -1442,6 +2040,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4sOOclh?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 13126,
+    keywords: [
+      "usb hub",
+      "usb c hub",
+      "type c hub",
+      "amkette",
+      "4 port hub",
+      "laptop accessories",
+      "hub",
+    ],
     description: [
       "GOBOULT x Mustang collaboration — iconic racing aesthetics fused with audiophile performance.",
       "60 hours total playtime with a breathing LED case — charge once, use all week.",
@@ -1463,6 +2070,13 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0F1YCF29P?linkCode=ml1&tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 1426,
+    keywords: [
+      "storage organizer",
+      "multi purpose organizer",
+      "desk organizer",
+      "storage box",
+      "organizer",
+    ],
     description: [
       "Leather finish with 360° Spatial Audio places you in the center of your soundscape.",
       "70 hours of total playtime with rapid charging — spend more time listening, less charging.",
@@ -1484,6 +2098,13 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0DNW58M1T?linkCode=ml1&tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 18107,
+    keywords: [
+      "storage organizer",
+      "2 piece organizer",
+      "desk organizer",
+      "storage box",
+      "multi purpose",
+    ],
     description: [
       "2-piece set of durable PPCP plastic organizers — each holds 33 liters for versatile storage.",
       "Secure magnetic door lock keeps contents dust-free and prevents items from shifting.",
@@ -1505,6 +2126,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B07QVL49RC?linkCode=ml1&tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 14223,
+    keywords: [
+      "wardrobe",
+      "foldable wardrobe",
+      "clothes storage",
+      "solimo",
+      "portable wardrobe",
+      "closet",
+    ],
     description: [
       "2-door foldable wardrobe with sturdy steel frame and corrosion-free metal parts.",
       "5 non-woven beige shelves each hold up to 10kg — spacious for a full wardrobe.",
@@ -1526,6 +2155,15 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0BN8BDTGK?linkCode=ml1&tag=curifyystore-21",
     rating: 3.6,
     reviewCount: 1308,
+    keywords: [
+      "wardrobe",
+      "collapsible wardrobe",
+      "foldable wardrobe",
+      "clothes storage",
+      "gtc",
+      "portable wardrobe",
+      "shelf wardrobe",
+    ],
     description: [
       "12 shelves plus a movable hanging rod gives you ample space for both folded and hanging clothes.",
       "Non-rustable iron pipe with PP plastic connectors — built for long-term storage needs.",
@@ -1547,6 +2185,16 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B00BQT6LAW?linkCode=ml1&tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 22123,
+    keywords: [
+      "laptop table",
+      "laptop stand",
+      "foldable table",
+      "bed table",
+      "portronics",
+      "laptop desk",
+      "study table",
+      "with fan",
+    ],
     description: [
       "Built-in USB cooling fan keeps your laptop cool during long gaming or study sessions.",
       "Adjustable tilt angle and foldable legs let you set the perfect ergonomic position.",
@@ -1567,6 +2215,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3NV5ONo?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 1720,
+    keywords: [
+      "laptop table",
+      "foldable table",
+      "bed table",
+      "laptop desk",
+      "cup holder table",
+      "study table",
+      "portable table",
+    ],
     description: [
       "Made from MDF solid wood — smooth, moisture-proof, scratch-resistant, and eco-friendly.",
       "Built-in cup holder keeps your drink secure while you work, study, or watch shows.",
@@ -1588,6 +2245,15 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B09PJ73NC8?linkCode=ml1&tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 78,
+    keywords: [
+      "shower bag",
+      "caddy bag",
+      "mesh bag",
+      "bathroom bag",
+      "college bag",
+      "hostel bag",
+      "tote bag",
+    ],
     description: [
       "8 roomy pockets organize shampoo, conditioner, soap, razor, toothbrush, comb, and more.",
       "Quick-dry waterproof mesh prevents mildew and keeps everything fresh and accessible.",
@@ -1608,6 +2274,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4e5COwO?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 269,
+    keywords: [
+      "tote bag",
+      "knitted bag",
+      "heart bag",
+      "aesthetic bag",
+      "shoulder bag",
+      "cute bag",
+    ],
     description: [
       "Charming heart-shaped knit pattern adds a sweet, romantic touch to any outfit.",
       "Lightweight breathable cotton — comfortable to carry even when fully loaded.",
@@ -1628,6 +2302,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4bT5t5y?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 10,
+    keywords: [
+      "beach bag",
+      "mesh bag",
+      "large bag",
+      "tote bag",
+      "makabee",
+      "shopping bag",
+    ],
     description: [
       '17.9" × 15" × 9" — large enough for 4-6 beach towels plus water bottles and sunblock.',
       "8 outer mesh pockets plus 1 inner zip pocket keeps valuables safe and organized.",
@@ -1649,6 +2331,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0FRMRTTDP?linkCode=ml1&tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 5,
+    keywords: [
+      "hair accessories",
+      "storage box",
+      "hair organizer",
+      "clear box",
+      "jewelry box",
+      "accessories box",
+    ],
     description: [
       "Clear PP material lets you instantly see all your hair accessories without opening.",
       "15 × 15 × 8 cm compact size fits on any dresser, shelf, or bathroom counter.",
@@ -1669,6 +2359,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4s4kfMV?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 22,
+    keywords: [
+      "beach bag",
+      "mesh tote",
+      "nylon bag",
+      "tote bag",
+      "makabee",
+      "large tote",
+      "23l bag",
+    ],
     description: [
       "23L capacity carries towels, water bottles, glasses, toys, and all beach day essentials.",
       "Anti-tear nylon mesh — passed 400 swings with a 5kg load, built to last all summer.",
@@ -1689,6 +2388,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4suU2rn?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 0,
+    keywords: [
+      "organizer bag",
+      "clear bag",
+      "mesh bag",
+      "transparent bag",
+      "travel bag",
+      "toiletry bag",
+    ],
     description: [
       "See-through PVC design lets you identify contents without opening — saves time in class.",
       "Multiple mesh pockets and dividers keep notebooks, pens, and documents neatly separated.",
@@ -1709,6 +2416,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4dw7XJT?tag=curifyystore-21",
     rating: 5.0,
     reviewCount: 1,
+    keywords: [
+      "crochet bag",
+      "beach tote",
+      "flower bag",
+      "mesh tote",
+      "palay",
+      "aesthetic bag",
+      "handmade bag",
+    ],
     description: [
       "Hollow-out crochet pattern adds natural texture and a relaxed boho charm to any outfit.",
       "Charming flower accent elevates the look — a feminine, eye-catching accessory.",
@@ -1729,6 +2445,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/47CHvua?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 10,
+    keywords: [
+      "crochet bag",
+      "bow bag",
+      "shoulder bag",
+      "aesthetic bag",
+      "palay",
+      "handmade bag",
+      "knit bag",
+    ],
     description: [
       "Hollow-out crochet design with pink bow ornaments gives a playful, coquette aesthetic.",
       "Approximately 13 × 15 inches — spacious for groceries, books, towels, and personal items.",
@@ -1749,6 +2474,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4e0pVEl?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 34803,
+    keywords: [
+      "whiteboard",
+      "magnetic whiteboard",
+      "dry erase board",
+      "notice board",
+      "mini whiteboard",
+      "desk whiteboard",
+    ],
     description: [
       "Magnetic dry-wipe surface — stick notes with magnets and write reminders with markers.",
       "Durable aluminium frame with pen tray keeps markers and eraser within easy reach.",
@@ -1770,6 +2503,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B01N2MN71B?linkCode=ml1&tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 12689,
+    keywords: [
+      "whiteboard",
+      "magnetic whiteboard",
+      "dry erase board",
+      "office whiteboard",
+      "large whiteboard",
+      "notice board",
+    ],
     description: [
       "Resin-coated steel surface is 100% smooth, scratch-free, and warp-free for easy writing.",
       "Magnet-friendly — attach notes, schedules, and reminders directly on the board.",
@@ -1791,6 +2532,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0DHVF8N5S?linkCode=ml1&tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 11,
+    keywords: [
+      "whiteboard",
+      "a4 whiteboard",
+      "rubber whiteboard",
+      "magnetic whiteboard",
+      "small whiteboard",
+      "memo board",
+    ],
     description: [
       "Set of 2 A4 rubber whiteboard sheets with magnetic backing — stick to any metal surface.",
       "Flexible and rollable for compact storage and portability — carry them anywhere.",
@@ -1811,6 +2560,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4cl4Z9L?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 29,
+    keywords: [
+      "whiteboard",
+      "dry erase board",
+      "small whiteboard",
+      "mini whiteboard",
+      "desk whiteboard",
+      "sumiko",
+    ],
     description: [
       "Compact 11×14 inch whiteboard with smooth, ghost-free writing surface.",
       "Comes with a dry-erase marker with eraser cap — write, erase, and repeat endlessly.",
@@ -1832,6 +2589,15 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B09QMNCWYG?linkCode=ml1&tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 850,
+    keywords: [
+      "infinity cube",
+      "fidget cube",
+      "stress toy",
+      "fidget toy",
+      "cube",
+      "cubelelo",
+      "anxiety relief",
+    ],
     description: [
       "#1 Best Seller in Fidget Cubes with 200+ monthly buys — a desk toy that actually helps focus.",
       "Endless flipping and folding provides a soothing tactile feedback to calm the mind.",
@@ -1852,6 +2618,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/48qZIeu?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 303,
+    keywords: [
+      "fidget spinner",
+      "spinner",
+      "stress toy",
+      "fidget toy",
+      "skill toy",
+      "girgit",
+      "rotobee",
+    ],
     description: [
       "Multi-link design allows countless tricks: dual spin, one-wing rotation, and more.",
       "Improves focus, hand-eye coordination, and concentration — ideal for ADHD and autism.",
@@ -1873,6 +2648,14 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B0BLDSKKWW?linkCode=ml1&tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 754,
+    keywords: [
+      "fidget spinner",
+      "gyro spinner",
+      "crab spinner",
+      "rainbow spinner",
+      "stress toy",
+      "fidget toy",
+    ],
     description: [
       "Four-sided ninja-style fidget spinner with a rainbow metallic gyro crab design — looks as cool as it spins.",
       "Ultra-quiet high-speed rotation using durable steel ball bearings — spins for a long, satisfying time.",
@@ -1893,6 +2676,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3PIXnoY?tag=curifyystore-21",
     rating: 3.5,
     reviewCount: 33,
+    keywords: [
+      "fidget cube",
+      "stress cube",
+      "anxiety relief",
+      "fidget toy",
+      "stress reliever",
+      "sensory toy",
+    ],
     description: [
       "6 unique features on 6 sides: Click, Glide, Flip, Breathe, Roll, and Spin.",
       "Soft material construction is gentle on fingers during extended fidgeting sessions.",
@@ -1913,6 +2704,14 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4sNRqWh?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 1100,
+    keywords: [
+      "infinity cube",
+      "fidget cube",
+      "stress toy",
+      "fidget toy",
+      "black cube",
+      "anxiety relief",
+    ],
     description: [
       "Classic black infinity cube with smooth, satisfying flip-and-fold motion for stress relief.",
       "Designed for ADD, ADHD, anxiety, and autism — helps channel restless energy positively.",
@@ -1934,6 +2733,15 @@ const PRODUCTS: Product[] = [
       "https://www.amazon.in/dp/B09PNCBTSP/ref=cm_sw_r_as_gl_apa_gl_i_dl_?linkCode=ml1&tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 1004,
+    keywords: [
+      "usb hub",
+      "usb a hub",
+      "4 port usb",
+      "amkette",
+      "laptop accessories",
+      "hub",
+      "usb splitter",
+    ],
     description: [
       "Instantly expand your USB ports with a compact plug-and-play hub.",
       "Compatible with Windows, Mac, and Linux for universal device connectivity.",
@@ -1954,6 +2762,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4v7Xrid?tag=curifyystore-21",
     rating: 4.0,
     reviewCount: 741,
+    keywords: [
+      "bracelet",
+      "couple bracelet",
+      "friendship bracelet",
+      "fashion frill",
+      "jewelry",
+      "bangles",
+      "wristband",
+    ],
     description: [
       "Natural onyx stone beaded bracelets with a magnetic heart connector — one black, one white.",
       "When the two bracelets come together, the half-hearts form one complete heart — a symbol of connection.",
@@ -1974,6 +2791,17 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4bPsg3z?tag=curifyystore-21",
     rating: 4.3,
     reviewCount: 334,
+    keywords: [
+      "tablet",
+      "redmi pad",
+      "ipad",
+      "android tablet",
+      "redmi",
+      "xiaomi",
+      "wifi tablet",
+      "tab",
+      "redmi tablet",
+    ],
     description: [
       "2.5K Sharp & Clear Display with 90Hz refresh rate — crystal clear for classes, binge-watching, and reading.",
       "9000mAh battery delivers all-day power with 18W fast charging so you're never caught dead.",
@@ -1994,6 +2822,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4vdnzZ6?tag=curifyystore-21",
     rating: 3.7,
     reviewCount: 551,
+    keywords: [
+      "fairy lights",
+      "led lights",
+      "curtain lights",
+      "room decor",
+      "string lights",
+      "aesthetic lights",
+      "crystal lights",
+    ],
     description: [
       "Beautiful crystal bead LED curtain that creates a starburst, sparkling effect in any room.",
       "Warm white light (2700K) casts a cozy, golden glow — perfect for ambient bedroom lighting.",
@@ -2014,6 +2851,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3O1A1du?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 8,
+    keywords: [
+      "erasable pen",
+      "gel pen",
+      "purple pen",
+      "pen",
+      "stationery",
+      "khamosh",
+      "writing pen",
+      "erasable",
+    ],
     description: [
       "Erasable blue ink with a built-in elastic eraser cap — erase cleanly without damaging the paper.",
       "0.5mm fine tip delivers smooth, consistent lines — great for detailed notes and creative writing.",
@@ -2034,6 +2881,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4maKfoE?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 1240,
+    keywords: [
+      "ballpoint pen",
+      "ball pen",
+      "pen",
+      "hauser",
+      "pack of pens",
+      "writing pen",
+      "stationery",
+      "bulk pens",
+    ],
     description: [
       "0.7mm ultra-durable tip with low-viscosity ink writes smoothly without skipping or smearing.",
       "Sleek matte finish solid body with minimalistic design — looks premium, writes even better.",
@@ -2054,6 +2911,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/3O78UOa?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 86,
+    keywords: [
+      "necklace",
+      "couple necklace",
+      "sun moon necklace",
+      "venzina",
+      "jewelry",
+      "pendant",
+      "friendship necklace",
+    ],
     description: [
       "Magnetic sun and moon pendants that connect together — symbolizing warmth and calming love.",
       "Using your phone's flashlight, the pendant projects 'I love you' in 100 different languages.",
@@ -2074,6 +2940,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4cjqVSN?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 397,
+    keywords: [
+      "cushion",
+      "pillow",
+      "heart pillow",
+      "soft cushion",
+      "room decor",
+      "heart cushion",
+      "cute pillow",
+    ],
     description: [
       "Amazon's Choice heart-shaped cushion in a rich multicolor fur cover — soft, plush, and huggable.",
       '12"×12" size is the perfect lap-cuddle size for bedtime, study breaks, or room decor.',
@@ -2094,6 +2969,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4bU1Wny?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 320,
+    keywords: [
+      "earrings",
+      "jhumka",
+      "combo earrings",
+      "fashion frill",
+      "jewelry",
+      "gold earrings",
+      "ethnic earrings",
+    ],
     description: [
       "Combo of 4 pairs of multicolor oxidised jhumki earrings — one set for every mood and occasion.",
       "Traditional Indian design with sparkling color and intricate detailing — party, college, or festive wear.",
@@ -2114,6 +2998,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4e1kIw1?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 1135,
+    keywords: [
+      "vase",
+      "glass vase",
+      "amber vase",
+      "room decor",
+      "flower vase",
+      "purple tree",
+      "desk decor",
+    ],
     description: [
       "Luster amber glass vase with a tapered round shape — warm, earthy, and Instagram-worthy.",
       "21cm × 8cm size is perfect for a study desk, shelf, or center table — not too big, not too small.",
@@ -2134,6 +3027,15 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4sioF2Z?tag=curifyystore-21",
     rating: 3.8,
     reviewCount: 4363,
+    keywords: [
+      "necklace",
+      "bff necklace",
+      "heart necklace",
+      "yellow chimes",
+      "jewelry",
+      "friendship necklace",
+      "bestie necklace",
+    ],
     description: [
       "One heart split into 3 perfectly fitting pendant pieces — the ultimate BFF necklace set.",
       "Each pendant fits onto a delicate silver chain — wear separately and let your bond speak.",
@@ -2154,6 +3056,16 @@ const PRODUCTS: Product[] = [
     amazonUrl: "https://amzn.to/4drQ0fq?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 629,
+    keywords: [
+      "earrings",
+      "hoop earrings",
+      "stud earrings",
+      "combo earrings",
+      "shining diva",
+      "jewelry",
+      "gold earrings",
+      "set of earrings",
+    ],
     description: [
       "6 pairs in one pack — a mix of hoop earrings and crystal pearl studs for everyday styling.",
       "5-layer micro gold plating for high durability — nickel-free and lead-free per international standards.",
@@ -2916,14 +3828,19 @@ export default function App() {
     : baseProducts;
 
   const searchLower = searchQuery.trim().toLowerCase();
+
+  // When searching, search ALL products regardless of category filter
+  const searchBase = searchLower
+    ? wishlistOnly
+      ? PRODUCTS.filter((p) => wishlist.has(p.id))
+      : PRODUCTS
+    : afterWishlist;
+
   const afterSearch = searchLower
-    ? afterWishlist.filter(
+    ? searchBase.filter(
         (p) =>
           p.name.toLowerCase().includes(searchLower) ||
-          p.benefit.toLowerCase().includes(searchLower) ||
-          p.category.toLowerCase().includes(searchLower) ||
-          p.tag?.toLowerCase().includes(searchLower) ||
-          p.description.some((d) => d.toLowerCase().includes(searchLower)),
+          p.keywords.some((k) => k.toLowerCase().includes(searchLower)),
       )
     : afterWishlist;
   const filteredProducts = sortProducts(afterSearch, sortBy);
@@ -3384,8 +4301,8 @@ export default function App() {
                   No products found
                 </p>
                 <p className="text-muted-foreground text-sm">
-                  Try searching for something else — like "lamp", "speaker", or
-                  "bag"
+                  Try searching for "headphones", "bottle", "lamp", "bag",
+                  "speaker", or any product keyword
                 </p>
                 <button
                   type="button"
