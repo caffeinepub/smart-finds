@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -19,17 +20,15 @@ import {
   Flame,
   Gift,
   Heart,
-  Instagram,
   Menu,
   Music,
+  Search,
   Share2,
   ShoppingBag,
   Sparkles,
   Star,
   Target,
-  Twitter,
   X,
-  Youtube,
   Zap,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -47,7 +46,8 @@ type Category =
   | "audio"
   | "bags"
   | "stationery"
-  | "storage";
+  | "storage"
+  | "fashion";
 
 type SortOption = "best-rated" | "most-reviewed" | "price-low" | "price-high";
 
@@ -254,8 +254,7 @@ const PRODUCTS: Product[] = [
       "Aesthetic transparent glass can with bamboo lid and straw — the edgy desk drink upgrade under ₹500",
     price: "₹499",
     tag: "Viral",
-    image:
-      "/assets/generated/product-10-antihero-glass-tumbler-v2-transparent.dim_600x600.png",
+    image: "https://m.media-amazon.com/images/I/71mRHHeMDvL._SL1500_.jpg",
     amazonUrl: "https://amzn.to/41EePNY?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 35,
@@ -275,8 +274,7 @@ const PRODUCTS: Product[] = [
       "360° rotatable multi-functional book & laptop stand with adjustable height and angle",
     price: "₹389",
     tag: "Student Favorite",
-    image:
-      "/assets/generated/product-11-sunchhaya-book-laptop-stand-v2.dim_600x600.png",
+    image: "https://m.media-amazon.com/images/I/41DZN7DMHEL._SL1500_.jpg",
     amazonUrl: "https://amzn.to/3NUyxSw?tag=curifyystore-21",
     rating: 3.9,
     reviewCount: 312,
@@ -391,7 +389,7 @@ const PRODUCTS: Product[] = [
     name: "Supreme Deals Canvas Pencil Case",
     category: "stationery",
     benefit:
-      "6-layer, 3-compartment cute aesthetic pencil case for school girls",
+      "6-layer, 3-compartment cute aesthetic pencil case for everyday use",
     price: "₹258",
     tag: "Student Favorite",
     image: "https://m.media-amazon.com/images/I/71a9rKgxQfL._SL1440_.jpg",
@@ -414,8 +412,7 @@ const PRODUCTS: Product[] = [
       "Premium grid-ruled journal perfect for notes, sketches, and planning",
     price: "₹399",
     tag: "New",
-    image:
-      "/assets/generated/product-18-aesthetic-grid-journal-v2.dim_600x600.png",
+    image: "https://m.media-amazon.com/images/I/61JMvK0SL5L._SL1500_.jpg",
     amazonUrl:
       "https://www.amazon.in/dp/B0B28PVRHQ/ref=cm_sw_r_as_gl_apa_gl_i_dl_FNAZQKAW05P3PPP3N1MV?linkCode=ml1&tag=curifyystore-21&linkId=03f7d3d3a5ed40b25ab87878fa147d3f",
     rating: 4.1,
@@ -573,8 +570,7 @@ const PRODUCTS: Product[] = [
       "Smooth-writing retractable gel pens — your everyday writing essential",
     price: "₹199",
     tag: "New",
-    image:
-      "/assets/generated/product-27-retractable-gel-pen-set-v2.dim_600x600.png",
+    image: "https://m.media-amazon.com/images/I/71P5kFtTNzL._SL1500_.jpg",
     amazonUrl: "https://amzn.to/419Gbvi?tag=curifyystore-21",
     rating: 4.1,
     reviewCount: 445,
@@ -794,8 +790,7 @@ const PRODUCTS: Product[] = [
       "Inkless Bluetooth pocket printer — print notes, stickers, and photos anywhere.",
     price: "₹1,747",
     tag: "Viral",
-    image:
-      "/assets/generated/product-38-seznik-thermal-printer-v2.dim_600x600.png",
+    image: "https://m.media-amazon.com/images/I/41a0yk56tpL._SL1500_.jpg",
     amazonUrl: "https://amzn.to/41ag8Ec?tag=curifyystore-21",
     rating: 4.2,
     reviewCount: 410,
@@ -1739,7 +1734,7 @@ const PRODUCTS: Product[] = [
       "Approximately 13 × 15 inches — spacious for groceries, books, towels, and personal items.",
       "Lightweight open-top design adapts easily as a shopping bag, beach bag, or daily tote.",
       "Soft and breathable knit material stays comfortable on the shoulder all day.",
-      "A sweet gift idea for fashion-forward girls and women who love trendy accessories.",
+      "A sweet gift idea for fashion-forward people who love trendy accessories.",
     ],
   },
   {
@@ -1873,8 +1868,7 @@ const PRODUCTS: Product[] = [
       "Four-sided ninja spinner with long rotation and rainbow gyro design — EDC stress toy",
     price: "₹499",
     tag: "Trending",
-    image:
-      "/assets/generated/product-92-rainbow-gyro-crab-fidget-v2.dim_600x600.png",
+    image: "https://m.media-amazon.com/images/I/51U6i3T7z2L._SL1500_.jpg",
     amazonUrl:
       "https://www.amazon.in/dp/B0BLDSKKWW?linkCode=ml1&tag=curifyystore-21",
     rating: 4.2,
@@ -1946,6 +1940,226 @@ const PRODUCTS: Product[] = [
       "Lightweight aluminum build with 1 USB 3.0 and 3 USB 2.0 ports.",
       "No driver installation needed — just plug in and start using immediately.",
       "1-year warranty — a budget-friendly connectivity upgrade for students and professionals.",
+    ],
+  },
+  {
+    id: 96,
+    name: "Fashion Frill Couple Bracelets",
+    category: "fashion",
+    benefit:
+      "Magnetic heart onyx stone bracelets for couples — black & white pair",
+    price: "₹139",
+    tag: "Viral",
+    image: "https://m.media-amazon.com/images/I/51yOQpoxO-L._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4v7Xrid?tag=curifyystore-21",
+    rating: 4.0,
+    reviewCount: 741,
+    description: [
+      "Natural onyx stone beaded bracelets with a magnetic heart connector — one black, one white.",
+      "When the two bracelets come together, the half-hearts form one complete heart — a symbol of connection.",
+      "Stretchable band fits all wrist sizes comfortably; the stones feel smooth and grounding to wear.",
+      "400+ buys per month — a popular gifting choice for couples, best friends, and long-distance pairs.",
+      "Made in India with high-quality natural stone beads — lightweight, durable, and skin-friendly.",
+    ],
+  },
+  {
+    id: 97,
+    name: 'Redmi Pad 2 WiFi Tablet 11"',
+    category: "tech",
+    benefit:
+      "2.5K display, 9000mAh battery, AI features & Dolby Atmos — best tablet under ₹20K",
+    price: "₹16,999",
+    tag: "New",
+    image: "https://m.media-amazon.com/images/I/51q0oBnFO5L._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4bPsg3z?tag=curifyystore-21",
+    rating: 4.3,
+    reviewCount: 334,
+    description: [
+      "2.5K Sharp & Clear Display with 90Hz refresh rate — crystal clear for classes, binge-watching, and reading.",
+      "9000mAh battery delivers all-day power with 18W fast charging so you're never caught dead.",
+      "AI features including Circle to Search and Gemini AI built-in for smarter studying and note-taking.",
+      "Dolby Atmos with quad speakers — audio that actually feels cinematic for a budget tablet.",
+      "Active stylus support (sold separately) for sketching, annotating PDFs, and precision navigation.",
+    ],
+  },
+  {
+    id: 98,
+    name: "Desidiya Crystal Fairy LED Curtain Lights",
+    category: "fun",
+    benefit:
+      "Crystal bead warm white LED curtain lights — magical ambiance for your room",
+    price: "₹944",
+    tag: "Trending",
+    image: "https://m.media-amazon.com/images/I/71sPwJMc2jL._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4vdnzZ6?tag=curifyystore-21",
+    rating: 3.7,
+    reviewCount: 551,
+    description: [
+      "Beautiful crystal bead LED curtain that creates a starburst, sparkling effect in any room.",
+      "Warm white light (2700K) casts a cozy, golden glow — perfect for ambient bedroom lighting.",
+      "Energy-efficient LEDs with a safe plastic wire housing — no shock risk, no overheating.",
+      "Indoor and outdoor use: perfect for Diwali, Christmas, birthday backdrops, or everyday decor.",
+      "Easy to hang, bendable copper-style wire — shape it however you want your dream room to look.",
+    ],
+  },
+  {
+    id: 99,
+    name: "KHAMOSH TRADERS Purple Erasable Gel Pens (Set of 4)",
+    category: "stationery",
+    benefit:
+      "Cute cartoon erasable gel pens with built-in eraser cap — 0.5mm fine tip, blue ink",
+    price: "₹129",
+    tag: "New",
+    image: "https://m.media-amazon.com/images/I/51wLRJ7vJRL._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/3O1A1du?tag=curifyystore-21",
+    rating: 4.2,
+    reviewCount: 8,
+    description: [
+      "Erasable blue ink with a built-in elastic eraser cap — erase cleanly without damaging the paper.",
+      "0.5mm fine tip delivers smooth, consistent lines — great for detailed notes and creative writing.",
+      "Soft cartoon-themed grip reduces hand fatigue during long study or exam sessions.",
+      "Click-action retractable design keeps the tip protected — no losing caps mid-study session.",
+      "Amazon's Choice — set of 4 purple-themed pens, a fun stationery upgrade for any student.",
+    ],
+  },
+  {
+    id: 100,
+    name: "Hauser XO 0.7mm Ball Pen (Pack of 50)",
+    category: "stationery",
+    benefit:
+      "Sleek matte finish ballpoint pens with low-viscosity ink — ultra-smooth writing",
+    price: "₹199",
+    tag: "Best Seller",
+    image: "https://m.media-amazon.com/images/I/61i3pU5BcoL._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4maKfoE?tag=curifyystore-21",
+    rating: 4.1,
+    reviewCount: 1240,
+    description: [
+      "0.7mm ultra-durable tip with low-viscosity ink writes smoothly without skipping or smearing.",
+      "Sleek matte finish solid body with minimalistic design — looks premium, writes even better.",
+      "Available in blue, black, and red ink — a practical pack that covers all exam and classwork needs.",
+      "Designed in Germany, built for Indian students — long-lasting and reliable for daily use.",
+      "Pack of 50 pens — enough to last you the entire semester and share with friends.",
+    ],
+  },
+  {
+    id: 101,
+    name: "Venzina Couple Necklace Sun & Moon (2 Pcs)",
+    category: "fashion",
+    benefit:
+      "Magnetic sun & moon pendant necklaces that project 'I love you' in 100 languages",
+    price: "₹269",
+    tag: "Viral",
+    image: "https://m.media-amazon.com/images/I/61UdmDdKECL._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/3O78UOa?tag=curifyystore-21",
+    rating: 4.2,
+    reviewCount: 86,
+    description: [
+      "Magnetic sun and moon pendants that connect together — symbolizing warmth and calming love.",
+      "Using your phone's flashlight, the pendant projects 'I love you' in 100 different languages.",
+      "Rhinestone-studded sun pendant with a delicate hollow crescent moon — elegant and meaningful.",
+      "100+ buys per month — a best-seller gifted for birthdays, Valentine's Day, and anniversaries.",
+      "Comes as a set of 2 — perfect for couples or best friends who want to share something special.",
+    ],
+  },
+  {
+    id: 102,
+    name: "ascension Heart Shape Cushion Pillow",
+    category: "fun",
+    benefit:
+      "Soft plush heart-shaped cushion — the sweetest gift for your person",
+    price: "₹132",
+    tag: "Trending",
+    image: "https://m.media-amazon.com/images/I/61YeEKMX6BL._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4cjqVSN?tag=curifyystore-21",
+    rating: 4.2,
+    reviewCount: 397,
+    description: [
+      "Amazon's Choice heart-shaped cushion in a rich multicolor fur cover — soft, plush, and huggable.",
+      '12"×12" size is the perfect lap-cuddle size for bedtime, study breaks, or room decor.',
+      "Machine washable in cold water — easy to keep clean and fresh looking.",
+      "Makes an ideal Valentine's Day, birthday, or 'just because' gift for someone you love.",
+      "100+ buys per month at under ₹135 — the most affordable way to make someone smile.",
+    ],
+  },
+  {
+    id: 103,
+    name: "Fashion Frill Jhumka Earrings Combo (Set of 4)",
+    category: "fashion",
+    benefit:
+      "4 pairs of multicolor oxidised traditional jhumki earrings — for every outfit",
+    price: "₹169",
+    tag: "Best Seller",
+    image: "https://m.media-amazon.com/images/I/71tQMJ6WNsL._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4bU1Wny?tag=curifyystore-21",
+    rating: 4.2,
+    reviewCount: 320,
+    description: [
+      "Combo of 4 pairs of multicolor oxidised jhumki earrings — one set for every mood and occasion.",
+      "Traditional Indian design with sparkling color and intricate detailing — party, college, or festive wear.",
+      "Made from high-quality brass — lightweight, lead-free, nickel-free, and skin-friendly.",
+      "300+ buys per month — a top-rated fashion pick that works with kurtas, jeans, or ethnic outfits.",
+      "Comes in an elegant ready-to-gift box — makes a thoughtful birthday or friendship gift.",
+    ],
+  },
+  {
+    id: 104,
+    name: "The Purple Tree Amber Glass Vase",
+    category: "fun",
+    benefit:
+      "Tapered amber glass vase for home decor — adds warmth to any room or shelf",
+    price: "₹289",
+    tag: "Student Favorite",
+    image: "https://m.media-amazon.com/images/I/51xqYfDC+IL._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4e1kIw1?tag=curifyystore-21",
+    rating: 4.1,
+    reviewCount: 1135,
+    description: [
+      "Luster amber glass vase with a tapered round shape — warm, earthy, and Instagram-worthy.",
+      "21cm × 8cm size is perfect for a study desk, shelf, or center table — not too big, not too small.",
+      "Works beautifully with dried flowers, pampas grass, or just as a standalone decorative piece.",
+      "1,135+ reviews with 4.1 stars — one of the best-reviewed home decor vases on Amazon India.",
+      "A great housewarming, hostel move-in, or dorm room gift under ₹300.",
+    ],
+  },
+  {
+    id: 105,
+    name: "Yellow Chimes BFF Heart Necklace (3 Pcs)",
+    category: "fashion",
+    benefit:
+      "3-piece best friends forever heart necklace set — one heart split into 3",
+    price: "₹194",
+    tag: "Viral",
+    image: "https://m.media-amazon.com/images/I/61tFAEX0Z0L._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4sioF2Z?tag=curifyystore-21",
+    rating: 3.8,
+    reviewCount: 4363,
+    description: [
+      "One heart split into 3 perfectly fitting pendant pieces — the ultimate BFF necklace set.",
+      "Each pendant fits onto a delicate silver chain — wear separately and let your bond speak.",
+      "4,363+ reviews — the most reviewed best-friend necklace set on Amazon India.",
+      "Arrives in a Yellow Chimes gift box — ready to wrap and give with no extra effort.",
+      "Silver tone finish that pairs with any outfit — casual, ethnic, or formal.",
+    ],
+  },
+  {
+    id: 106,
+    name: "Shining Diva 6 Pairs Hoop & Stud Earrings (Gold)",
+    category: "fashion",
+    benefit:
+      "6-pair combo of gold hoop and crystal stud earrings — 5-layer micro gold plating",
+    price: "₹294",
+    tag: "Best Seller",
+    image: "https://m.media-amazon.com/images/I/61WG-k3NecL._SL1500_.jpg",
+    amazonUrl: "https://amzn.to/4drQ0fq?tag=curifyystore-21",
+    rating: 3.9,
+    reviewCount: 629,
+    description: [
+      "6 pairs in one pack — a mix of hoop earrings and crystal pearl studs for everyday styling.",
+      "5-layer micro gold plating for high durability — nickel-free and lead-free per international standards.",
+      "Suitable for daily wear or party outfits — versatile enough for college, dates, or weddings.",
+      "Skin-friendly and comfortable — lightweight design won't tire your ears even after hours of wear.",
+      "Ideal Valentine's, birthday, or festive gift — comes in an elegant box ready to give.",
     ],
   },
 ];
@@ -2323,6 +2537,28 @@ function makeImageFallback(name: string, _category: string): string {
       "/assets/generated/product-black-infinity-cube.dim_400x400.jpg",
     "Amkette USB-A Hub 4 Port":
       "/assets/generated/product-usba-hub.dim_400x400.jpg",
+    "Fashion Frill Couple Bracelets":
+      "/assets/generated/product-couple-bracelets.dim_400x400.jpg",
+    'Redmi Pad 2 WiFi Tablet 11"':
+      "/assets/generated/product-redmi-pad2-tablet.dim_400x400.jpg",
+    "Desidiya Crystal Fairy LED Curtain Lights":
+      "/assets/generated/product-crystal-fairy-lights.dim_400x400.jpg",
+    "KHAMOSH TRADERS Purple Erasable Gel Pens (Set of 4)":
+      "/assets/generated/product-purple-erasable-pens.dim_400x400.jpg",
+    "Hauser XO 0.7mm Ball Pen (Pack of 50)":
+      "/assets/generated/product-hauser-xo-ballpens.dim_400x400.jpg",
+    "Venzina Couple Necklace Sun & Moon (2 Pcs)":
+      "/assets/generated/product-sun-moon-necklace.dim_400x400.jpg",
+    "ascension Heart Shape Cushion Pillow":
+      "/assets/generated/product-heart-cushion-pillow.dim_400x400.jpg",
+    "Fashion Frill Jhumka Earrings Combo (Set of 4)":
+      "/assets/generated/product-jhumka-earrings-set.dim_400x400.jpg",
+    "The Purple Tree Amber Glass Vase":
+      "/assets/generated/product-amber-glass-vase.dim_400x400.jpg",
+    "Yellow Chimes BFF Heart Necklace (3 Pcs)":
+      "/assets/generated/product-bff-heart-necklace.dim_400x400.jpg",
+    "Shining Diva 6 Pairs Hoop & Stud Earrings (Gold)":
+      "/assets/generated/product-hoop-stud-earrings.dim_400x400.jpg",
   };
   return (
     AI_IMAGES[name] ??
@@ -2411,7 +2647,7 @@ function ProductCard({
         </button>
       </div>
       <div className="p-4 flex flex-col flex-1 gap-2">
-        <h3 className="font-semibold text-[15px] text-foreground leading-snug">
+        <h3 className="font-semibold text-[15px] text-foreground leading-snug line-clamp-3">
           {product.name}
         </h3>
         <StarRating rating={product.rating} reviewCount={product.reviewCount} />
@@ -2474,7 +2710,7 @@ function ProductCard({
                 size="sm"
                 className="bg-deep-purple hover:bg-deep-purple/90 text-white rounded-xl text-xs px-4 h-8 font-semibold transition-all duration-200 hover:scale-105"
               >
-                Buy Now
+                bring it home ♡
               </Button>
             </a>
           </div>
@@ -2599,7 +2835,7 @@ function ProductModal({
             >
               <Button className="w-full bg-deep-purple hover:bg-deep-purple/90 text-white rounded-xl font-semibold h-11 flex items-center gap-2">
                 <ExternalLink size={15} />
-                Buy on Amazon
+                bring it home ♡
               </Button>
             </a>
             <Button
@@ -2639,6 +2875,7 @@ export default function App() {
   );
   const [wishlistOnly, setWishlistOnly] = useState(false);
   const [openProductId, setOpenProductId] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const featuredRef = useRef<HTMLDivElement>(null);
 
   useScrollReveal();
@@ -2678,7 +2915,18 @@ export default function App() {
     ? baseProducts.filter((p) => wishlist.has(p.id))
     : baseProducts;
 
-  const filteredProducts = sortProducts(afterWishlist, sortBy);
+  const searchLower = searchQuery.trim().toLowerCase();
+  const afterSearch = searchLower
+    ? afterWishlist.filter(
+        (p) =>
+          p.name.toLowerCase().includes(searchLower) ||
+          p.benefit.toLowerCase().includes(searchLower) ||
+          p.category.toLowerCase().includes(searchLower) ||
+          p.tag?.toLowerCase().includes(searchLower) ||
+          p.description.some((d) => d.toLowerCase().includes(searchLower)),
+      )
+    : afterWishlist;
+  const filteredProducts = sortProducts(afterSearch, sortBy);
 
   const scrollToFeatured = () => {
     featuredRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -2700,37 +2948,6 @@ export default function App() {
           "linear-gradient(160deg, oklch(0.962 0.022 163) 0%, oklch(0.953 0.019 84) 35%, oklch(0.952 0.030 40) 70%, oklch(0.958 0.016 72) 100%)",
       }}
     >
-      {/* ── Floating Wishlist Badge ─────────────────────────── */}
-      <button
-        type="button"
-        onClick={() => {
-          setWishlistOnly((v) => !v);
-          scrollToFeatured();
-        }}
-        className="fixed top-20 right-4 z-40 flex items-center gap-1.5 bg-white border border-border shadow-lg rounded-full px-3 py-2 text-sm font-semibold hover:bg-red-50 transition-colors duration-200"
-        data-ocid="wishlist.toggle"
-        title={wishlistOnly ? "Show all products" : "Show saved items"}
-      >
-        <Heart
-          size={16}
-          className={
-            wishlist.size > 0
-              ? "fill-red-500 text-red-500"
-              : "text-muted-foreground"
-          }
-        />
-        <span
-          className={
-            wishlist.size > 0 ? "text-red-500" : "text-muted-foreground"
-          }
-        >
-          {wishlist.size}
-        </span>
-        {wishlistOnly && (
-          <span className="text-[10px] text-red-400 font-normal">saved</span>
-        )}
-      </button>
-
       {/* ── Header ─────────────────────────────────────────── */}
       <header
         className="sticky top-0 z-50 backdrop-blur-sm border-b-2 border-lavender/30"
@@ -2762,8 +2979,32 @@ export default function App() {
               className="hidden sm:flex bg-lavender hover:bg-lavender/90 text-white text-sm font-semibold rounded-xl px-5 h-9"
               data-ocid="nav.primary_button"
             >
-              Explore Products
+              explore ♡
             </Button>
+            <button
+              type="button"
+              onClick={() => {
+                setWishlistOnly((v) => !v);
+                scrollToFeatured();
+              }}
+              className="flex items-center gap-1.5 bg-white/80 border border-border shadow-sm rounded-full px-3 py-1.5 text-sm font-semibold hover:bg-red-50 transition-colors duration-200"
+              data-ocid="wishlist.toggle"
+              title={wishlistOnly ? "Show all products" : "Show saved items"}
+            >
+              <Heart
+                size={15}
+                className={
+                  wishlist.size > 0
+                    ? "fill-red-500 text-red-500"
+                    : "text-muted-foreground"
+                }
+              />
+              {wishlist.size > 0 && (
+                <span className="text-red-500 text-xs font-bold">
+                  {wishlist.size}
+                </span>
+              )}
+            </button>
             <button
               type="button"
               className="md:hidden p-2 rounded-lg text-foreground hover:bg-muted transition-colors"
@@ -2797,7 +3038,7 @@ export default function App() {
               className="mt-3 w-full bg-lavender hover:bg-lavender/90 text-white font-semibold rounded-xl"
               data-ocid="nav.primary_button"
             >
-              Explore Products
+              explore ♡
             </Button>
           </div>
         )}
@@ -2812,16 +3053,17 @@ export default function App() {
                 <div className="p-8 sm:p-12 flex flex-col justify-center gap-6">
                   <div className="inline-flex items-center gap-2 bg-lavender/10 text-lavender rounded-full px-4 py-1.5 text-xs font-semibold w-fit">
                     <Sparkles size={12} />
-                    Curated finds you'll love ✨
+                    thoughtfully curated, always ♡
                   </div>
-                  <h1 className="text-4xl sm:text-5xl font-extrabold text-foreground leading-tight tracking-tight">
-                    Trending Finds
+                  <h1 className="text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
+                    for those who
                     <br />
-                    <span className="text-lavender">You'll Actually Use</span>
+                    <span className="text-lavender">feel everything</span>{" "}
+                    <span className="text-2xl">♡</span>
                   </h1>
                   <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-md">
-                    Smart, aesthetic, and budget-friendly picks for students —
-                    discover things you didn't know you needed.
+                    a curated space for soft moments, quiet rituals, and the
+                    people who matter most
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button
@@ -2829,7 +3071,7 @@ export default function App() {
                       className="bg-lavender hover:bg-lavender/90 text-white font-bold rounded-2xl px-8 h-12 text-base shadow-hero/30 transition-all hover:scale-105"
                       data-ocid="hero.primary_button"
                     >
-                      Explore Products
+                      explore softly ♡
                     </Button>
                     <a href="#trending">
                       <Button
@@ -2883,6 +3125,64 @@ export default function App() {
           </div>
         </section>
 
+        {/* ── Brand Feeling ─────────────────────────────────── */}
+        <section className="py-10 px-4 sm:px-6">
+          <div className="max-w-[760px] mx-auto text-center reveal">
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-light italic">
+              "slow down. notice the small things. the morning light, the warmth
+              of your favourite mug, the right pen for a good day. we believe in
+              romanticizing every quiet ritual — and finding the little objects
+              that make ordinary moments feel like yours."
+            </p>
+            <span className="block mt-4 text-lavender text-sm font-semibold tracking-widest uppercase">
+              — Smart Finds
+            </span>
+          </div>
+        </section>
+
+        {/* ── Trust Section ─────────────────────────────────── */}
+        <section className="py-8 px-4 sm:px-6">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="bg-card border border-border rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-around gap-6 reveal shadow-card">
+              <div className="text-center">
+                <div className="text-3xl font-extrabold text-lavender">
+                  104+
+                </div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  curated products
+                </div>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-border" />
+              <div className="text-center">
+                <div className="text-3xl font-extrabold text-lavender">
+                  loved by hundreds ♡
+                </div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  and growing every day
+                </div>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-border" />
+              <div className="text-center">
+                <div className="text-3xl font-extrabold text-lavender">
+                  ₹129+
+                </div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  honest student prices
+                </div>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-border" />
+              <div className="text-center">
+                <div className="text-2xl font-extrabold text-lavender">
+                  only real products
+                </div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  no filler, no fluff
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── Categories ─────────────────────────────────────── */}
         <section
           id="categories"
@@ -2891,10 +3191,10 @@ export default function App() {
           <div className="max-w-[1200px] mx-auto">
             <div className="text-center mb-10 reveal">
               <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">
-                Browse by Category
+                for your soft days ♡
               </h2>
               <p className="text-muted-foreground text-base max-w-xl mx-auto">
-                Every type of student need, beautifully organised.
+                everything you need, sorted by feeling
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -2941,13 +3241,28 @@ export default function App() {
           <div className="max-w-[1200px] mx-auto">
             <div className="text-center mb-8 reveal">
               <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">
-                {wishlistOnly ? "❤️ Your Saved Items" : "Featured Products"}
+                {wishlistOnly ? "❤️ Your Saved Items" : "finds for you"}
               </h2>
               <p className="text-muted-foreground text-base max-w-xl mx-auto">
                 {wishlistOnly
                   ? `${wishlist.size} item${wishlist.size !== 1 ? "s" : ""} saved — all links go directly to Amazon`
-                  : "Hand-picked items that students actually love and use every day."}
+                  : "104 products hand-picked because they actually make life better"}
               </p>
+            </div>
+
+            {/* Search Bar */}
+            <div className="relative mb-4">
+              <Search
+                size={16}
+                className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
+              />
+              <Input
+                type="text"
+                placeholder="Search products..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="pl-9 h-10 rounded-xl border-border bg-card text-sm"
+              />
             </div>
 
             {/* Filter Tabs + Sort */}
@@ -2969,6 +3284,7 @@ export default function App() {
                     "productivity",
                     "fun",
                     "survival",
+                    "fashion",
                   ] as Category[]
                 ).map((cat) => (
                   <button
@@ -3057,6 +3373,27 @@ export default function App() {
                 >
                   Browse All Products
                 </Button>
+              </div>
+            )}
+
+            {/* Search No-Results State */}
+            {filteredProducts.length === 0 && searchQuery.trim() && (
+              <div className="col-span-full text-center py-16">
+                <div className="text-4xl mb-4">🔍</div>
+                <p className="text-lg font-semibold text-foreground mb-2">
+                  No products found
+                </p>
+                <p className="text-muted-foreground text-sm">
+                  Try searching for something else — like "lamp", "speaker", or
+                  "bag"
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  className="mt-4 text-sm text-lavender underline underline-offset-2"
+                >
+                  Clear search
+                </button>
               </div>
             )}
 
@@ -3365,7 +3702,7 @@ export default function App() {
                   className="bg-white text-[oklch(0.525_0.188_292)] hover:bg-white/90 font-extrabold text-base rounded-2xl px-10 h-14 shadow-lg hover:scale-105 transition-all duration-200"
                   data-ocid="cta.primary_button"
                 >
-                  Start Exploring ✨
+                  explore softly ♡
                 </Button>
               </div>
             </div>
@@ -3392,29 +3729,9 @@ export default function App() {
                 products for students and young adults. Because you deserve
                 things that actually work.
               </p>
-              <div className="flex items-center gap-3 mt-4">
-                <a
-                  href="https://www.amazon.in"
-                  className="w-8 h-8 bg-lavender/20 rounded-lg flex items-center justify-center hover:bg-lavender/40 transition-colors"
-                  data-ocid="footer.link"
-                >
-                  <Instagram size={15} className="text-foreground/70" />
-                </a>
-                <a
-                  href="https://www.amazon.in"
-                  className="w-8 h-8 bg-lavender/20 rounded-lg flex items-center justify-center hover:bg-lavender/40 transition-colors"
-                  data-ocid="footer.link"
-                >
-                  <Twitter size={15} className="text-foreground/70" />
-                </a>
-                <a
-                  href="https://www.amazon.in"
-                  className="w-8 h-8 bg-lavender/20 rounded-lg flex items-center justify-center hover:bg-lavender/40 transition-colors"
-                  data-ocid="footer.link"
-                >
-                  <Youtube size={15} className="text-foreground/70" />
-                </a>
-              </div>
+              <p className="text-xs text-muted-foreground mt-4 italic">
+                More social links coming soon ♡
+              </p>
             </div>
 
             <div>
@@ -3433,6 +3750,7 @@ export default function App() {
                   "Gifts & Fun",
                   "Productivity & Study",
                   "Everyday Survival",
+                  "Fashion & Accessories",
                 ].map((cat) => (
                   <li key={cat}>
                     <a
@@ -3451,25 +3769,18 @@ export default function App() {
               <h4 className="font-bold text-sm text-foreground uppercase tracking-widest mb-4">
                 Connect
               </h4>
-              <ul className="space-y-2">
-                {[
-                  "Instagram",
-                  "Twitter / X",
-                  "YouTube",
-                  "Pinterest",
-                  "Email Us",
-                ].map((item) => (
-                  <li key={item}>
-                    <a
-                      href="https://www.amazon.in"
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                      data-ocid="footer.link"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Social links coming soon ♡
+              </p>
+              <p className="text-sm text-muted-foreground mt-3">
+                <a
+                  href="mailto:hello@smartfinds.in"
+                  className="hover:text-foreground transition-colors underline"
+                  data-ocid="footer.link"
+                >
+                  Email Us
+                </a>
+              </p>
             </div>
 
             <div>
