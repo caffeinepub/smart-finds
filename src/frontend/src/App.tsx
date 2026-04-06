@@ -3562,10 +3562,10 @@ function ProductCard({
         <h3 className="font-semibold text-[15px] text-foreground leading-snug">
           {product.name}
         </h3>
-        <StarRating rating={product.rating} reviewCount={product.reviewCount} />
-        <p className="text-muted-foreground text-xs leading-relaxed">
+        <p className="text-xs italic text-rose-400 leading-snug -mt-0.5">
           {product.benefit}
         </p>
+        <StarRating rating={product.rating} reviewCount={product.reviewCount} />
         {product.description && (
           <div className="flex-1">
             <button
@@ -3872,8 +3872,11 @@ export default function App() {
       >
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
           <a href="#home" className="flex-shrink-0" data-ocid="nav.link">
-            <span className="font-display text-lavender text-2xl font-semibold tracking-tight">
-              Smart Finds
+            <span
+              className="font-display text-lavender text-2xl font-bold tracking-tight"
+              style={{ letterSpacing: "-0.01em" }}
+            >
+              curify ♡
             </span>
           </a>
 
@@ -3968,10 +3971,6 @@ export default function App() {
             <div className="bg-card border border-border rounded-3xl shadow-hero overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="p-8 sm:p-12 flex flex-col justify-center gap-6">
-                  <div className="inline-flex items-center gap-2 bg-lavender/10 text-lavender rounded-full px-4 py-1.5 text-xs font-semibold w-fit">
-                    <Sparkles size={12} />
-                    thoughtfully curated, always ♡
-                  </div>
                   <h1 className="text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
                     for those who
                     <br />
@@ -3985,7 +3984,7 @@ export default function App() {
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button
                       onClick={scrollToFeatured}
-                      className="bg-lavender hover:bg-lavender/90 text-white font-bold rounded-2xl px-8 h-12 text-base shadow-hero/30 transition-all hover:scale-105"
+                      className="bg-lavender hover:bg-lavender/90 text-white font-bold rounded-2xl px-10 h-14 text-base shadow-[0_8px_32px_oklch(0.6_0.19_293/0.45)] transition-all hover:scale-105 hover:shadow-[0_12px_40px_oklch(0.6_0.19_293/0.55)]"
                       data-ocid="hero.primary_button"
                     >
                       explore softly ♡
@@ -3993,7 +3992,7 @@ export default function App() {
                     <a href="#trending">
                       <Button
                         variant="outline"
-                        className="h-12 px-6 rounded-2xl text-base font-semibold border-lavender/40 text-lavender hover:bg-lavender/10"
+                        className="h-14 px-6 rounded-2xl text-sm font-medium border-lavender/30 text-lavender/70 hover:bg-lavender/10 hover:text-lavender"
                         data-ocid="hero.secondary_button"
                       >
                         See What's Trending
@@ -4052,51 +4051,8 @@ export default function App() {
               that make ordinary moments feel like yours."
             </p>
             <span className="block mt-4 text-lavender text-sm font-semibold tracking-widest uppercase">
-              — Smart Finds
+              — curify ♡
             </span>
-          </div>
-        </section>
-
-        {/* ── Trust Section ─────────────────────────────────── */}
-        <section className="py-8 px-4 sm:px-6">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="bg-card border border-border rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-around gap-6 reveal shadow-card">
-              <div className="text-center">
-                <div className="text-3xl font-extrabold text-lavender">
-                  104+
-                </div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  curated products
-                </div>
-              </div>
-              <div className="hidden sm:block w-px h-12 bg-border" />
-              <div className="text-center">
-                <div className="text-3xl font-extrabold text-lavender">
-                  loved by hundreds ♡
-                </div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  and growing every day
-                </div>
-              </div>
-              <div className="hidden sm:block w-px h-12 bg-border" />
-              <div className="text-center">
-                <div className="text-3xl font-extrabold text-lavender">
-                  ₹129+
-                </div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  honest student prices
-                </div>
-              </div>
-              <div className="hidden sm:block w-px h-12 bg-border" />
-              <div className="text-center">
-                <div className="text-2xl font-extrabold text-lavender">
-                  only real products
-                </div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  no filler, no fluff
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -4110,7 +4066,7 @@ export default function App() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">
                 for your soft days ♡
               </h2>
-              <p className="text-muted-foreground text-base max-w-xl mx-auto">
+              <p className="text-foreground/80 text-base max-w-xl mx-auto font-semibold">
                 everything you need, sorted by feeling
               </p>
             </div>
@@ -4163,7 +4119,7 @@ export default function App() {
               <p className="text-muted-foreground text-base max-w-xl mx-auto">
                 {wishlistOnly
                   ? `${wishlist.size} item${wishlist.size !== 1 ? "s" : ""} saved — all links go directly to Amazon`
-                  : "104 products hand-picked because they actually make life better"}
+                  : "no useless stuff. only what actually helps."}
               </p>
             </div>
 
@@ -4611,8 +4567,8 @@ export default function App() {
                   Upgrade Your Everyday Life
                 </h2>
                 <p className="text-white/80 text-base sm:text-lg max-w-xl mx-auto mb-8">
-                  Stop scrolling. Start discovering. Every item on Smart Finds
-                  is here because it genuinely makes student life better.
+                  Stop scrolling. Start discovering. Every item on curify ♡ is
+                  here because it genuinely makes student life better.
                 </p>
                 <Button
                   onClick={scrollToFeatured}
@@ -4639,7 +4595,7 @@ export default function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             <div>
               <span className="font-display text-2xl font-semibold text-lavender block mb-3">
-                Smart Finds
+                curify ♡
               </span>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 A curated collection of smart, aesthetic, and affordable
@@ -4718,7 +4674,7 @@ export default function App() {
 
           <div className="border-t border-lavender/20 pt-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
             <span>
-              © {new Date().getFullYear()} Smart Finds. Curated with ❤️ for
+              © {new Date().getFullYear()} curify ♡. Curated with ❤️ for
               students.
             </span>
             <span>
