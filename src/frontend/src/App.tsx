@@ -3559,7 +3559,7 @@ function ProductCard({
         </button>
       </div>
       <div className="p-4 flex flex-col flex-1 gap-2">
-        <h3 className="font-semibold text-[15px] text-foreground leading-snug line-clamp-3">
+        <h3 className="font-semibold text-[15px] text-foreground leading-snug">
           {product.name}
         </h3>
         <StarRating rating={product.rating} reviewCount={product.reviewCount} />
@@ -4491,7 +4491,7 @@ export default function App() {
                         }}
                       />
                       <div className="flex-1 min-w-0">
-                        <div className="font-semibold text-sm text-foreground truncate">
+                        <div className="font-semibold text-sm text-foreground">
                           {item.name}
                         </div>
                         <StarRating
@@ -4554,7 +4554,7 @@ export default function App() {
                           }}
                         />
                         <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-sm text-foreground truncate">
+                          <div className="font-semibold text-sm text-foreground">
                             {item.name}
                           </div>
                           <StarRating
